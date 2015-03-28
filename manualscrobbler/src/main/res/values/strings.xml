@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Manual Scrobbler</string>
+
+    <string name="button_search">Search</string>
+    <string name="action_settings">Settings</string>
+    <string name="searchStringHint">Search String</string>
+    <string name="title_activity_results">Results</string>
+
+    <string name="hello_world">Hello world!</string>
+</resources>

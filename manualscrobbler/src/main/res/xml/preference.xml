@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Last.FM">
+
+
+        <EditTextPreference
+             android:id="@+id/lastfmUsernameEdit"
+                android:key="lastfm_username"
+                android:summary="Your username for last.fm"
+
+                android:title="Username" />
+
+        <EditTextPreference
+             android:inputType="textPassword"
+             android:id="@+id/lastfmPasswordEdit"
+             android:key ="lastfm_password"
+             android:title="Password"
+             android:summary="Your password for last.fm" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
