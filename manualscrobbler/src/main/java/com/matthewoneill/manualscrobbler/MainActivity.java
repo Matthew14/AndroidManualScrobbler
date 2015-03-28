@@ -42,11 +42,16 @@ public class MainActivity extends Activity {
     private void doSearch(String text) {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
 
-        if(!preferences.contains("lastfm_username") || !preferences.contains("lastfm_password"))
-        {
-            ToastIt("Please login in the settings.");
+        if(!preferences.contains("lastfm_username") || !preferences.contains("lastfm_password")) {
+            ToastIt(getString(R.string.please_login));
             return;
         }
+
+        if(text.trim().equals("")) {
+            ToastIt(getString(R.string.no_search_term));
+            return;
+        }
+
 
         Intent myIntent = new Intent(MainActivity.this, Results.class);
 

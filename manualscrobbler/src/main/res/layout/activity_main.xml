@@ -13,6 +13,8 @@
             android:layout_marginTop="20dp"
             android:layout_width="fill_parent"
             android:id="@+id/searchEditText"
+            android:lines="1"
+            android:maxLines="1"
             android:hint="@string/searchStringHint"
             android:layout_height="wrap_content"
             />
